@@ -1,0 +1,24 @@
+/* Nav.css */
+.navbar {
+    /* Add your navigation styles */
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+
+  .navbar li {
+    margin-right: 20px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }

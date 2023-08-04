@@ -1,14 +1,18 @@
-import './App.css';
+import React from 'react';
+import { Header, Nav, Main, Footer } from './Components/Index';
+import './App.css'
 
-function App() {
+const App = () => {
   return (
-    <>
-    <header></header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
-   </>
+    <div className='app'>
+      <div className="header-nav-container">
+        <Header />
+        <Nav />
+      </div>
+      <Main />
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;

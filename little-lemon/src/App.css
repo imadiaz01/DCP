@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .header-nav-container {
+    display: flex; /* Display header and nav side by side */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    flex-wrap: nowrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  header {
+    display: flex; /* Set header to use flexbox */
+    justify-content: space-between; /* Align items horizontally with space between */
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
   }
+
+  nav {
+    display: flex; /* Set nav to use flexbox */
+    justify-content: flex-end; /* Align navigation links to the right */
+    align-items: center;
+    padding: 1rem;
+  }
+
+
+  /* Media query for screens with a maximum width of 700px */
+
+@media (max-width: 700px) {
+    .header-nav-container {
+      flex-direction: column; /* Stack header and nav vertically */
+      align-items: stretch; /* Stretch items vertically to take full width */
+      padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+
+    header {
+      justify-content: center; /* Center header content vertically */
+      padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+
+    nav {
+      justify-content: center; /* Center navigation content vertically */
+      padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+    .logo img {
+        max-height: 40px; /* Adjust logo height for smaller screens */
+      }
+
+      .navbar ul {
+        flex-direction: column; /* Stack navigation links vertically */
+      }
+
+      .navbar li {
+        margin: 10px 0; /* Add spacing between navigation links */
+      }
+    }
+      /* Media query for screens with a maximum width of 244px */
+
+      @media (max-width: 244px) {
+    .logo img {
+      max-height: 30px; /* Further adjust logo height for smaller screens */
+    }
 }
+    /* Additional adjustments for Main and Footer if needed */
