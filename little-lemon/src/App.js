@@ -6,9 +6,9 @@ const App = () => {
   return (
     <div className='app'>
       <div className="header-nav-container">
-        <Header />
         <Nav />
       </div>
+      <Header id='/About' />
       <Main />
       <Footer />
     </div>
