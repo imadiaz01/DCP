@@ -25,6 +25,13 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
+    color: #000;
+font-family: Karla;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
   }
 
   .Logo {
@@ -47,7 +54,6 @@
 
 
   @media screen and (max-width: 800px) {
-    
 
     .nav_mobile_menu_container{
       flex: auto;
@@ -58,8 +64,6 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-
-      
      }
 
      .nav_mobile_menu {
@@ -69,7 +73,6 @@
       padding-left: 0px;
       padding-right: 0px;
      }
-
 
    .menu_links {
     display: none;
@@ -94,12 +97,21 @@ padding-top: 12rem;
 
   display: flex;
   justify-content: center;
-
-  padding-inline: 2rem;
+  padding-inline:
 }
-
-.navbar_links {
+  .navbar_links {
   padding-right: 1rem;
 
 }
+  }
+
+  @media screen and (max-width: 300px) {
+
+    .navbar {
+      flex-shrink: 1;
+    }
+
+    .navbar-menu {
+      display: none;
+    }
   }

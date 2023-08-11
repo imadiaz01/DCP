@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Nav, Main, Footer } from './Components/Index';
+import { Hero, Nav, Main, Footer } from './Components/Index';
 import './App.css'
 
 const App = () => {
@@ -8,7 +8,9 @@ const App = () => {
       <div className="header-nav-container">
         <Nav />
       </div>
-      <Header id='/About' />
+      <div className='hero-container' >
+      <Hero id='/About'/>
+      </div>
       <Main />
       <Footer />
     </div>

@@ -1,0 +1,166 @@
+h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-container {
+    display: flex;
+    padding: 3rem;
+    background-color: #545454;
+    justify-content:space-around;
+    align-content: space-around;
+
+
+
+  }
+
+  .hero-left
+  {
+      display: flex;
+      width: 314px;
+      flex-wrap: wrap;
+  }
+
+  .hero-right
+  {
+    width: 388px;
+    height: 372px;
+  
+      margin-left: 5rem;
+      
+  }
+
+ .hero-right img {
+    max-width: 480px;
+    min-height: 372px;
+      max-height: 372px;
+      border-radius: 5%;
+}
+
+.hero-right-img {
+
+    display: flex;
+}
+
+  .hero-central-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+  }
+
+  h1 {
+    color: #000;
+font-family: Inter;
+font-size: 53px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 0px;
+  }
+  h4 {
+
+    color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19.36px;
+width: 420px;
+height: 57px;
+
+  }
+  h6 {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0
+;
+  }
+
+  button
+  {
+    
+      display: flex;
+      width: 199px;
+      height: 48px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 3px;
+      background: #000;
+  }
+
+
+
+/* Media Query's for responsiveness*/
+@media screen and (max-width: 988px) {
+
+    .hero-right img {
+        width: fit-content;
+        height: fit-content;
+        max-width: 480px;
+        min-height: 372px;
+          max-height: 372px;
+          border-radius: 5%;
+    }
+
+
+    .hero-right  {
+        width: auto;
+        display: flex;
+
+    }
+}
+
+@media screen and (max-width: 984px) {
+
+    .hero-right  {
+        padding-top: 5rem;
+        justify-content: center;
+        display: flex;
+        padding-left: 0rem;
+        margin-left: 0rem;
+    }
+
+}
+
+  @media screen and (max-width: 800px) {
+
+    .hero-central-container{
+     
+    }
+
+    .hero-right{
+      display: flex;
+      min-height: 372px;
+      max-height: 372px;
+     width: auto;
+     padding-left: 0rem;
+    }
+
+    .hero-left{
+         display: flex;   
+    }
+  }
+
+
+
+    @media screen and (max-width: 540px) {
+
+      .hero-right{
+        
+        display: none;
+      }
+
+ 
+      }
+
