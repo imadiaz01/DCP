@@ -10,7 +10,7 @@ h1 {
 .hero-container {
     display: flex;
     padding: 3rem;
-    background-color: #545454;
+    background-color: #cfffe7;
     justify-content:space-around;
     align-content: space-around;
 
@@ -21,17 +21,25 @@ h1 {
   .hero-left
   {
       display: flex;
-      width: 314px;
+      width: 320px;
       flex-wrap: wrap;
+      align-content: center;
+      flex-direction: column;
+      
+  }
+
+  .hero-left h4 {
+
+    padding-bottom: 5vh;
+    width: 420px;
+    
   }
 
   .hero-right
   {
     width: 388px;
     height: 372px;
-  
-      margin-left: 5rem;
-      
+    padding: 0rem 5rem;
   }
 
  .hero-right img {
@@ -65,29 +73,25 @@ margin-bottom: 0px;
   h4 {
 
     color: #000;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 19.36px;
-width: 420px;
-height: 57px;
-
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.625%; /* 28.125px */
+    
   }
   h6 {
     color: #000;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 0
-;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    margin: 0;
   }
 
   button
   {
-    
       display: flex;
       width: 199px;
       height: 48px;
@@ -97,70 +101,98 @@ height: 57px;
       gap: 10px;
       border-radius: 3px;
       background: #000;
+      color: white;
   }
 
 
 
 /* Media Query's for responsiveness*/
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 990px) {
 
-    .hero-right img {
-        width: fit-content;
-        height: fit-content;
-        max-width: 480px;
-        min-height: 372px;
-          max-height: 372px;
-          border-radius: 5%;
-    }
-
-
-    .hero-right  {
-        width: auto;
-        display: flex;
-
-    }
-}
-
-@media screen and (max-width: 984px) {
-
-    .hero-right  {
-        padding-top: 5rem;
-        justify-content: center;
-        display: flex;
-        padding-left: 0rem;
-        margin-left: 0rem;
-    }
+  .hero-right img {
+    width: fit-content;
+    height: fit-content;
+    max-height: 372px;
+    border-radius: 5%;
 
 }
 
-  @media screen and (max-width: 800px) {
+.hero-left h4 {
+  width: fit-content;
+  padding-bottom: 5vh;
+}
+
+
+.hero-left{
+  padding-bottom: 15vh;
+  display: flex;
+  align-content: space-between;
+  height: 20rem;
+  flex-direction: row;
+}
+
+
+}
+
+@media screen and (max-width: 979px) {
+  .hero-right {
+    display: flex;
+    justify-content: center;
+  }
+
+.hero-left{
+  padding-bottom: 15vh;
+  display: flex;
+  align-content: space-between;
+  height: 20rem;
+  flex-direction: row;
+}
+
+
+
+}
+
+  @media screen and (max-width: 845px) {
 
     .hero-central-container{
-     
+
     }
 
-    .hero-right{
-      display: flex;
-      min-height: 372px;
-      max-height: 372px;
-     width: auto;
-     padding-left: 0rem;
-    }
 
     .hero-left{
-         display: flex;   
+         display: flex;
+         align-content: space-between;
+         height: 20rem;
     }
   }
 
 
 
-    @media screen and (max-width: 540px) {
+      @media screen and (max-width: 550px) {
 
-      .hero-right{
-        
-        display: none;
+        .hero-right{
+
+          display: none;
+        }
+        .hero-left {
+          height: 25rem;
+        }
+
+
       }
 
- 
-      }
+      @media screen and (max-width: 350px) {
 
+        .hero-left {
+          height: 30rem;
+          width: auto;
+        }
+
+        .hero-left h4 {
+          width: 181px;
+          padding-bottom: 10vh;
+          }
+
+       
+
+      }

@@ -1,9 +1,8 @@
 .header-nav-container {
   display: flex; /* Display headerbar with logo and nav side by side */
   padding: 2rem;
-  background-color: #325a33;
+  background-color: #386e55e6;
   justify-content: center;
-  padding-top: 5rem
 
 }
 
