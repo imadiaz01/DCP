@@ -22,7 +22,7 @@ const App = () => {
         <Hero showBookingForm={showBookingForm} onButtonClick={toggleBookingForm} onClose={handleBookingFormClose} />
       </div>
       <Main />
-      <Footer />
+      <Footer/>
     </div>
   );
 };
