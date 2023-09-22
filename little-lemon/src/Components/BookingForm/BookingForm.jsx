@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchAPI } from '../mockApi'; // Import the mock API function
+import './bookingForm.css'
 
 function BookingForm({ onClose }) {
   const [name, setName] = useState('');
