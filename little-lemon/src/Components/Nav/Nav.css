@@ -5,6 +5,16 @@
   width: 887px;
   height: 78px;
   flex-shrink: 1;
+  padding-top: 1rem;
+    position: fixed; /* Make the entire navbar sticky */
+    top: 0; /* Stick it to the top of the viewport */
+    width: 100%; /* Full width */
+    height: 78px;
+    z-index: 1000; /* Adjust z-index as needed */
+    padding-bottom: 1rem;
+    left: 0;
+    right: 0;
+    background-color: #386e55;
 }
 
 .navbar ul {
@@ -35,11 +45,11 @@
   text-transform: capitalize;
 }
 
-
 .navbar-menu {
   flex: auto;
   display: none;
   position: relative;
+  padding-right: 2rem;
 }
 
 .Logo {
@@ -49,6 +59,16 @@
   justify-content: flex-end;
 }
 
+
+
+.navbar.sticky:not(.Logo)  {
+  position: fixed;
+  background-color: #386e55;
+  padding-bottom: 1rem;
+  top: 0;
+  left:0;
+  /* Add other styles as needed */
+}
 
 @media screen and (max-width: 840px) {
   .nav_mobile_menu_container {
@@ -70,32 +90,35 @@
     padding-right: 0px;
   }
   .navbar ul:not(.navbar_links) {
-
     display: none;
+    
   }
 
-  ul.navbar_links{
-    padding-top: 15rem;
+  ul.navbar_links {
+    padding-top: 20rem;
     padding-right: 3rem;
     display: flex;
     align-items: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     max-height: fit-content;
     width: 3rem;
     flex-direction: column;
+    background-color: darkslategrey;
+    width: 5rem;
+    height: 22rem;
+    
   }
-
 }
 
 @media screen and (max-width: 650px) {
   .navbar {
     display: flex;
     justify-content: center;
-    padding-inline: 1rem;
   }
 
   .navbar_links {
     padding-right: 1rem;
+    
   }
 }
 
@@ -106,5 +129,6 @@
 
   .navbar-menu {
     display: none;
+    
   }
 }

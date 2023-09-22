@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './Nav.css';
 
 const NavLinks = ({ onReservationsClick }) => {
   const handleReservationsClick = (event) => {
-    event.preventDefault(); // Prevent the default behavior of the link
-    onReservationsClick(); // Call the provided onClick function
+    event.preventDefault();
+    onReservationsClick();
   };
 
   return (
@@ -22,18 +22,35 @@ const NavLinks = ({ onReservationsClick }) => {
 
 const Nav = ({ onReservationsClick }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleMobileReservationsClick = (event) => {
-    event.preventDefault(); // Prevent the default behavior of the link
-    onReservationsClick(); // Call the provided onClick function
-    setToggleMenu(false); // Close the mobile menu after clicking
+    event.preventDefault();
+    onReservationsClick();
+    setToggleMenu(false);
   };
 
   return (
-    <div className='navbar'>
+    <div className={`navbar ${sticky ? 'sticky' : ''}`}>
       <div className='Logo'>
-       <a href="/Home" className='Logo'>
-        <img  src="logo192.png" alt="Logo Little Lemon" />
+        <a href="/Home" className='Logo'>
+          <img  src="logo192.png" alt="Logo Little Lemon" />
         </a>
       </div>
       <NavLinks onReservationsClick={onReservationsClick} />

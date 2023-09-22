@@ -10,9 +10,10 @@ h1 {
 .hero-container {
     display: flex;
     padding: 3rem;
-    background-color: #cfffe7;
+    background-color: #4d7a64;
     justify-content:space-around;
     align-content: space-around;
+    padding-top: 6rem;
 
 
 
@@ -192,7 +193,5 @@ line-height: normal;
           width: 181px;
           padding-bottom: 10vh;
           }
-
-       
 
       }
