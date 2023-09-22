@@ -55,7 +55,7 @@ const Nav = ({ onReservationsClick }) => {
       </div>
       <NavLinks onReservationsClick={onReservationsClick} />
 
-      <div className='navbar-menu'>
+      <div className={`navbar-menu ${toggleMenu ? 'open' : ''}`}>
         {toggleMenu ? (
           <RiCloseLine color="#000" size={27} onClick={() => setToggleMenu(false)} />
         ) : (

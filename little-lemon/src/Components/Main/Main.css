@@ -65,12 +65,13 @@ h3 {
 }
 
 .card-data1 {
-padding-top: ;
+padding-top: 5vh;
 }
 
 
 .card.active {
   transform: translateZ(0);
+  padding-top: 5vh;
 }
 
 /* Navigation Buttons */
@@ -126,9 +127,13 @@ padding-top: ;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transform: translateZ(-100px);
   transition: transform 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   font-size: 18px;
   position: relative;
+  
 }
 
 .card.active {

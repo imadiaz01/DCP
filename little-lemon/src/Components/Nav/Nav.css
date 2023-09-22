@@ -67,8 +67,12 @@
   padding-bottom: 1rem;
   top: 0;
   left:0;
-  /* Add other styles as needed */
 }
+
+.navbar-menu.open {
+  padding-right: 0;
+}
+
 
 @media screen and (max-width: 840px) {
   .nav_mobile_menu_container {
@@ -120,6 +124,8 @@
     padding-right: 1rem;
     
   }
+
+ 
 }
 
 @media screen and (max-width: 290px) {
@@ -129,6 +135,6 @@
 
   .navbar-menu {
     display: none;
-    
+    padding-right: 0rem;
   }
 }
