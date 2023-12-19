@@ -15,14 +15,13 @@ h1 {
     align-content: space-around;
     padding-top: 6rem;
 
-
-
   }
+
 
   .hero-left
   {
       display: flex;
-      width: 320px;
+      padding-bottom: 5vh ;
       flex-wrap: wrap;
       align-content: center;
       flex-direction: column;
@@ -60,6 +59,7 @@ h1 {
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: center;
+    padding-bottom: 5rem
   }
 
   h1 {
@@ -81,6 +81,7 @@ margin-bottom: 0px;
     line-height: 140.625%; /* 28.125px */
     
   }
+
   h6 {
     color: #000;
 font-family: Inter;
@@ -88,7 +89,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-    margin: 0;
+margin: 0;
   }
 
   button
@@ -108,62 +109,50 @@ line-height: normal;
 
 
 /* Media Query's for responsiveness*/
-@media screen and (max-width: 990px) {
 
-  .hero-right img {
-    width: fit-content;
-    height: fit-content;
-    max-height: 372px;
-    border-radius: 5%;
+@media screen and (max-width: 1062px) {
 
-}
-
-.hero-left h4 {
-  width: fit-content;
-  padding-bottom: 5vh;
-}
-
-
-.hero-left{
-  padding-bottom: 15vh;
-  display: flex;
-  align-content: space-between;
-  height: 20rem;
-  flex-direction: row;
-}
-
-
-}
-
-@media screen and (max-width: 979px) {
   .hero-right {
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+
+}
+
+@media screen and (max-width: 966px) {
+
+  .hero-right {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 5vh
   }
 
 .hero-left{
-  padding-bottom: 15vh;
-  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5vh;
   align-content: space-between;
-  height: 20rem;
-  flex-direction: row;
+  width: auto;
 }
 
 
+.hero-central-container {
+  align-content: space-around;
+  padding-bottom: 0
+}
+
 
 }
+
 
   @media screen and (max-width: 845px) {
-
-    .hero-central-container{
-
-    }
 
 
     .hero-left{
          display: flex;
          align-content: space-between;
-         height: 20rem;
     }
   }
 
@@ -171,27 +160,38 @@ line-height: normal;
 
       @media screen and (max-width: 550px) {
 
-        .hero-right{
+        .hero-central-container{
+          padding-bottom: 0rem;
+        }
 
+        .hero-right{
           display: none;
         }
-        .hero-left {
-          height: 25rem;
+
+
+        .hero-left h4 {
+          padding-bottom: 5vh;
+          height: fit-content;
+          width: fit-content;
         }
 
 
       }
 
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 450px) {
 
-        .hero-left {
-          height: 30rem;
-          width: auto;
+        .hero-central-container {
+          display: flex;
         }
 
         .hero-left h4 {
-          width: 181px;
-          padding-bottom: 10vh;
-          }
+          width: fit-content;
+        }
+
+        .hero-left {
+          padding-bottom: 5vh;
+        }
+
+
 
       }

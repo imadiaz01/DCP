@@ -28,9 +28,11 @@ const Hero = ({ showBookingForm, onButtonClick, onClose }) => {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </h4>
+            <div className='bttn-container'>
             <button className='button' onClick={handleButtonClick}>
               Reserve a Table
             </button>
+            </div>
           </div>
           <div className='hero-right'>
             <div className='hero-right-img'>

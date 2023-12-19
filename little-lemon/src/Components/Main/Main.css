@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items:center;
- padding: 2rem;
+ 
 }
 
 /* Header */
@@ -22,13 +22,13 @@ h3 {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   z-index: 1;
-  box-sizing: border-box; /* Ensure padding is included in button dimensions */
-  white-space: nowrap; /* Prevent text from wrapping */
+  box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .divider{
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 2rem;
@@ -36,8 +36,10 @@ h3 {
 
 /* Carousel Container */
 .carousel-container {
+  width: fit-content;
   position: relative;
   perspective: 1000px;
+  padding-bottom: 10rem
 }
 
 /* Carousel */
@@ -61,7 +63,7 @@ h3 {
   transition: transform 0.5s ease-in-out;
   text-align: center;
   font-size: 18px;
-  position: relative; /* Added position:relative */
+  position: relative; 
 }
 
 .card-data1 {
@@ -111,11 +113,10 @@ padding-top: 5vh;
 .carousel {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 50vw;
   height: 50vh;
   transform-style: preserve-3d;
-  transition: transform 0.5s ease-in-out;
+  
 }
 
 .card {
@@ -137,6 +138,7 @@ padding-top: 5vh;
 }
 
 .card.active {
+  
   transform: translateZ(0);
 }
 
@@ -179,13 +181,18 @@ padding-top: 5vh;
 
   /* Ensure only one card is visible */
   .card {
-    width: 100%;
+    width: fit-content;
     display: none;
+    
   }
 
   /* Display the active card */
   .card.active {
     display: block;
+    height: auto;
+    padding-bottom: 5vh;
+    padding-top: 10vh;
+    
   }
 
   /* Reset button positions and styling */
@@ -235,6 +242,7 @@ padding-top: 5vh;
     justify-content: space-around;
     }
 
+
   .carousel {
     width: auto; /* Adjust the width as needed */
     overflow: hidden; /* Hide overflow to limit card visibility */
@@ -244,14 +252,12 @@ padding-top: 5vh;
 
   /* Position the buttons outside of the carousel */
   .prev {
-    top: 20vh;
-    left: -10px;
+   top: 35vh;
     position: relative;
   }
 
   .next {
-    top: 20vh;
-    right: -10px;
+    top: 35vh;
     position: relative;
   }
 }
