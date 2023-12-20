@@ -119,6 +119,13 @@ margin: 0;
     padding-bottom: 0rem;
   }
 
+  .bttn-container {
+
+    display: flex;
+
+    justify-content: center;
+  }
+
 }
 
 @media screen and (max-width: 966px) {
@@ -191,7 +198,11 @@ margin: 0;
         .hero-left {
           padding-bottom: 5vh;
         }
+        
+        button {
+          width: fit-content;
 
+        }
 
 
       }

@@ -106,15 +106,19 @@
     @media screen and (max-width: 350px) {
 
 
+  menu {
+
+    size-adjust: auto;
+
+  }
 
     .footer-container {
       display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 0%;
+    width: 100vw;
+
     }
-
-
 
 
 
